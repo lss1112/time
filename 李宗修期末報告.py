@@ -52,7 +52,7 @@ stocks["代號"] = [stocks["代號"][i]+".TW" for i in range(len(stocks))]  # �
 stocks["代號_證券名稱_市值佔大盤比重"] = [stocks["代號"][i] + " " + stocks["證券名稱"][i] + " " + str(round(stocks["市值佔大盤比重"][i], 6)) for i in range(len(stocks))]
 
 # 在側邊欄中顯示圖片
-st.sidebar.image('/Users/lizongsiou/Desktop/豬哥亮分析師.png', width=300)
+st.sidebar.image('豬哥亮分析師.png', width=300)
 
 # 創建側邊欄的交互式元件
 stock_ticker_name = st.sidebar.selectbox('請輸入股票代號_證券名稱_市值佔大盤比重', stocks["代號_證券名稱_市值佔大盤比重"])
